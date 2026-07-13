@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms - lets learn it.</title>
+</head>
+<body>
+    <form action="post">
+        <!-- label is used to add label to the input feilds. -->
+        <label for="name">Name:</label>
+        <!-- input is used to take input from the user.
+         place holder is used to add name of the input field -->
+        <input type="text" id="name" placeholder="Enter your name">
+       <!-- div is used to group the elements together.  -->
+        <div>
+        <label for="male">Male</label>
+        <!-- radio button is used to selact one opetion form the given option. -->
+<input type="radio" id="male" name="gender" value="male">
+<!-- here name must be same for all the radio button to group them together. -->
+<label for="female">Female</label>
+<input type="radio" id="female" name="gender" value="female">
+</div>
+<div>      
+<!-- checkbox is used to select multiple options -->
+        <label for="agree">I agree to terms and conditions</label>
+        <input type="checkbox" id="agree" name="agree">
+</div>
+        <!-- textarea is used to take multi-line input from the user -->
+        <div>
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="5" cols="30" placeholder="Enter your comments"></textarea>
+        </div>
+        <!-- select is used to create a dropdown list -->
+        <div>
+        <label for="country">Select Country:</label>
+        <select id="country" name="country">
+            <option value="">-- Choose a country --</option>
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="canada">Canada</option>
+        </select>
+        </div>
+    </form>
+</div>
+    
+</body>
+</html>
