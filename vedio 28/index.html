@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS positions property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid black;
+            padding: 3px;
+            margin: 3px;
+            width: 100px;
+            height: 100px;
+        }
+        .box1{
+            background-color: red;
+            position: static;
+        }
+        .box2{
+            background-color: green;
+            /* relative is a value of position property, it is used to specify the position of an element in relation to its normal position. When an element is positioned as relative, it is positioned relative to its normal position. The top, right, bottom, and left properties can be used to specify the offset of the element from its normal position. The element will still take up space in the layout, and other elements will not be affected by its position. */
+            position: relative;
+            top: 2px;
+            left: 30px;
+        }
+        .box3{
+            background-color: blue;
+            /* absolute is not a value of position property, it is a keyword that is used to specify the position of an element. It is used to specify the position of an element in relation to its nearest positioned ancestor. If there is no positioned ancestor, it will be positioned relative to the initial containing block. The absolute value of the position property is used to specify that an element should be positioned relative to its nearest positioned ancestor. If there is no positioned ancestor, it will be positioned relative to the initial containing bloc */
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .box4{
+            background-color: yellow;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+        }
+        .box5{
+            background-color: purple;
+            position: sticky;
+            top: 20px;
+            left: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    <div class="box box5"></div>
+    
+</body>
+</html>
