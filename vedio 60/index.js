@@ -1,0 +1,12 @@
+console.log('string in javaScript');
+let name = 'John';
+console.log(name);
+console.log('string methods in javaScript');
+let str = 'Hello, World!';
+console.log(str.length);
+console.log(str.toUpperCase());
+console.log(str.toLowerCase());
+console.log(str.includes('World'));
+console.log(str.substring(0, 5));
+console.log(str.split(', '));
+console.log(str.replace('World', 'JavaScript'));
