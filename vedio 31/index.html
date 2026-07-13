@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS media queries</title>
+    <style>
+        body {
+        background-color: lightblue;
+    }
+    @media only screen and (orientation: landscape) {
+        body {
+            background-color: green;
+        }
+        
+        
+    }
+    @media only screen and (max-width: 600px) {
+        body {
+            background-color: blue;
+        }
+        
+        
+    }
+    .box  {
+        width: 344px;
+        height: 344px;
+        background-color: red;
+        margin: 5px;
+        padding: 6px;
+        display: flex;
+        flex-direction: row;
+
+    }
+    </style>
+</head>
+<body>
+    <div>hey i am a  lightblue guy</div>
+    <div class="box">hey i am a blue guy</div>
+</body>
+</html>
