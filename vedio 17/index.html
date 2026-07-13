@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        /* Element selector */
+        div  {
+            background-color: red;
+        }
+        /* Class selector */
+        .my-div {
+            background-color: green;
+        }
+        /* id selector */
+        #my-div {
+            background-color: blue;
+        }
+        div > p {
+            background-color: yellow;
+            color: black;
+        }
+        /* universal selector */
+        * {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="my-div">
+        i am a div.
+    </div>
+    <div>
+        i am another div.
+    </div>
+    <div id="my-div">
+        i am yet another div.
+    </div>
+    <div>
+        <p>
+            i am a paragraph.
+        </p>
+    </div>
+</body>
+</html>
