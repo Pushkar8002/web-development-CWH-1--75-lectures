@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css variables</title>
+    <style>
+       /*css variables are used to store values that can be reused throughout the stylesheet. They are defined using the -- prefix and can be accessed using the var() function.*/
+        :root{
+            --color: blue;
+            --seccolor: yellow;
+            --defpadding: 20px;
+            --defopacity: 0.1;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+      /* here we reused the color variable in the nav and seccolor variable in the container class */
+        nav{
+            background-color: var(--color);
+             border: 2px solid var(--seccolor);
+             opacity: var(--defopacity);
+        }
+        .container{
+            background-color:var(--seccolor);
+        }
+        li{
+            padding: var(--defpadding);
+        }
+         /*here we can override the color variable for the first ul element and it will not affect the other elements that use the color variable. */ 
+        ul :first-child{
+            --color:green;
+            background-color: var(--color);
+           
+         
+        }
+     
+    </style>
+</head>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li>about</li>
+                <li>home</li>
+                <li>contact</li>
+            </ul>
+     </nav>
+</div>
+<div class="container">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed id architecto commodi perferendis nihil, rerum sapiente deleniti recusandae placeat aut aliquam animi iste hic quaerat repellendus doloremque, perspiciatis quasi quae. Laborum quod nobis impedit inventore quos debitis, ut ipsa ipsam molestiae, alias aut possimus molestias.
+
+</div>
+    
+</body>
+</html>
