@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>images </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- img.enter, here alt = if image not present in the file then it shows this -->
+   <!-- its not necessasry to write alt but its good practice to write alt because if image is not present in the file then it shows this and also for SEO purpose --> 
+    <img width="250" height="400" src="image.png" alt="A sample image">
+    <!-- in width and height no need to write px because it is by default in pixel and if we want to write in percentage then we have to write % after the number -->
+
+    <table>
+        <!-- caption is used to add title -->
+        <caption>Employee Information</caption>
+        
+            <tr>
+                <!-- here we are creating a table with 3 columns and 3 rows and in the first row we are writing the heading of the table and in the next rows we are writing the data of the table --> 
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>25</td>
+                <td>New York</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>30</td>
+                <td>Los Angeles</td>
+            </tr>
+            <tr>
+                <!-- colspan="2" means that this cell will span across 2 columns and it will take the space of 2 columns and in this case it will take the space of Name and Age columns and it will be merged into one cell and it will be displayed in the center -->
+                <td colspan="2">Bob Johnson</td>
+                <!-- rowspan same as colspan but it works on row -->
+                <td rowspan="">35</td>
+                <td>Chicago</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <!-- ul is used to create the unorderred list for the given data -->
+     <!-- in type we can sue square ,circle,disc  -->
+    <ul type="circle">
+        <li>HTML Tables</li>
+        <li>CSS Styling</li>
+        <li>JavaScript Functionality</li>
+        <li>Web Development</li>
+    </ul>
+<!-- ol is used to create the orderred list for the given data --> 
+    <ol type="I">
+        <!-- in type we can use I,i,1,a,A -->
+        <li>Learn HTML basics</li>
+        <li>Master CSS styling</li>
+        <li>Practice JavaScript</li>
+        <li>Build projects</li>
+    </ol>
+    
+</body>
+</html> 
